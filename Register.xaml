@@ -1,0 +1,39 @@
+﻿<Window x:Class="GUI.Register"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GUI"
+        mc:Ignorable="d"
+        Title="Register" Height="450" Width="800">
+    <Grid Margin="-2,0,2,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="497*"/>
+            <ColumnDefinition Width="303*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,0" StartPoint="0.5,1.5">
+                <GradientStop Color="Black" Offset="0"/>
+                <GradientStop Color="#FF4A69BD" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Label Content="Witaj!" Foreground="#ffffff" FontSize="45" FontFamily="Calibri" HorizontalAlignment="Left" Height="80" Margin="242,30,0,0" VerticalAlignment="Top" Width="148"/>
+        <Button Content="Admin account" Foreground="#ffffff" FontFamily="Calibri" Background="#3e87ad" Grid.Column="1" HorizontalAlignment="Left" Height="29" Margin="151,26,0,0" VerticalAlignment="Top" Width="95"/>
+        <Image Source="C:\Users\Karolinka\Pictures\logo.png" Margin="-8,0,319,279"/>
+        <Label Foreground="#ffffff" FontSize="20" FontFamily="Calibri" Content="Login" HorizontalAlignment="Left" Margin="451,167,0,0" VerticalAlignment="Top" Height="32" Width="61" Grid.ColumnSpan="2"/>
+        <Label Foreground="#ffffff" FontSize="20" FontFamily="Calibri" Content="Hasło" HorizontalAlignment="Left" Margin="451,232,0,0" VerticalAlignment="Top" Height="42" Width="61" Grid.ColumnSpan="2"/>
+        <TextBox Name="login" Text="" TextWrapping="Wrap" Margin="47,167,75,217" Grid.Column="1" Width="164" Height="50"/>
+        <PasswordBox Name="password" Margin="47,232,75,152" Grid.Column="1" Width="164" Height="50" Visibility="Visible"/>
+        <Label Foreground="#ffffff" FontSize="20" FontFamily="Calibri" Content="Powtórz hasło" HorizontalAlignment="Left" Margin="418,300,0,0" VerticalAlignment="Top" Height="39" Width="127" Grid.ColumnSpan="2"/>
+        <PasswordBox Name="password2" Margin="48,300,74,84" Grid.Column="1" Width="164" Height="50"/>
+        <Label Foreground="#ffffff" FontSize="20" FontFamily="Calibri" Content="Imie" HorizontalAlignment="Left" Margin="138,166,0,0" VerticalAlignment="Top" Height="43" Width="58"/>
+        <Label Foreground="#ffffff" FontSize="20" FontFamily="Calibri" Content="Nazwisko" HorizontalAlignment="Left" Margin="117,232,0,0" VerticalAlignment="Top" Height="35" Width="86"/>
+        <TextBox Name="fname" FontSize="12"  TextWrapping="Wrap" Margin="220,166,97,218" Width="164" Height="50"/>
+        <TextBox Name="lname" Text="" TextWrapping="Wrap" Margin="220,232,97,152" Height="50" Width="164"/>
+        <Label Foreground="#ffffff" FontSize="20" FontFamily="Calibri" Content="E-mail" HorizontalAlignment="Left" Margin="131,297,0,0" VerticalAlignment="Top" Height="48" Width="72"/>
+        <TextBox Name="email" Text="" TextWrapping="Wrap" Margin="220,297,96,87" Height="50" Width="164"/>
+        <Button x:Name ="sign_Click" Content="Zarejestruj się" Foreground="#ffffff" FontSize="23" FontFamily="Calibri" Background="#3e87ad" HorizontalAlignment="Left" Height="36" Margin="397,374,0,0" VerticalAlignment="Top" Width="148" Click="Button_Click" Grid.ColumnSpan="2"/>
+        <Button Foreground="#ffffff" FontFamily="Calibri" x:Name="Exit" Content="Wróć" Margin="58,367,386,25" Click="Exit_Click" Background="#FF4F91AE"/>
+
+    </Grid>
+</Window>
